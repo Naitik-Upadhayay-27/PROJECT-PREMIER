@@ -1,0 +1,1595 @@
+/* Beginning of CSS */
+
+/* 1) Boiler Plate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+/* 2) MAIN DIV */
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 1px;
+}
+
+/* 3) Nav TAB */
+
+.nav{
+    height: 11vh;
+    margin-top: 2.7vw;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.nav a {
+    font-size: 1.3vw;
+    font-weight: 600;
+    height: 100%;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid black ;
+    text-decoration: none;
+    color: black;
+}
+.nav h1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: kanit ;
+    font-weight: 700;
+    font-size: 3vw;
+    letter-spacing: -3px;
+}
+.nav a:last-child{
+    width: 15%;
+    font-size: 2.5vw;
+    border-right: none;
+}
+
+/* 4) CENTER PART */
+
+.center{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    padding: 4vw ;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    position:relative ;
+    overflow: hidden;
+}
+.content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    width:100%;
+    height: 17vw;
+    position: absolute;
+    bottom: 0px;
+    padding: 2vw 4vw;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter:blur(2px);
+    align-content: center;
+}
+.over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 3.4vw;
+    padding-bottom:2vw ;
+}
+.over1 h1{
+    font-family: kanit;
+    font-size: 3.6vw;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.over1 h2{
+    font-size: 1.5vw;
+    width: 4.5vw;
+    height: 4.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-bottom: 1vw solid white;
+    border-top: 1vw solid white;
+}
+.over2{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    border-top:3px solid white ;
+    padding-top:20px ;
+}
+.over2 h2{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.over2 img{
+    height: 2.3vw;
+}
+
+/* 5) SCROLL PART */
+
+.scroll{
+    height: 20vw;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.scroll img{
+    height: 15vw;
+    width: 16vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1vw 1.8vw;
+    object-position: 0% 1%;
+}
+.container{
+    height: 100%;
+    width: 120%;
+    display: inline-block;
+    padding: 0 2vw;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes animate {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/* 6) ALPHABET PART */
+
+.alpha{
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    border-top:3px solid black ;
+    border-bottom:3px solid black ;
+}
+.alpha h5{
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-bottom:2px solid black ;
+    margin-right:3vw ;
+}
+.alpha h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 500;
+    padding: 0.7vw 0.9vw;
+    border-radius: 50%;
+}
+.alpha h6:hover{
+    border: 1.5px solid rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------END OF PAGE 1-----------------------------------------------------------*/
+
+/* 7) BEGINNING OF PAGE 2 */
+
+.page2{
+    height:50vw;
+    width: 100%;
+    padding: 3vw 4vw;
+    position: relative;
+    margin-bottom: 1vw;
+}
+.page2-cover{
+    height: 110%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:60% 40% ;
+    grid-template-rows: 100%;
+}
+.page2-left{
+    position: relative;
+    margin-right: 10vw;
+}
+.page2-right{
+    position: relative;
+}
+.page2-left img{
+    width: 100%;
+    height: 97.65%;
+    object-fit: cover;
+    object-position: 40% 0;
+    border-radius: 31px;
+}
+.left-over{
+    width: 100%;
+    height: 9vw;
+    background-color: white;
+    position: absolute;
+    bottom:2.3%;
+    font-size:2.5vw ;
+    padding: 2vw 0;
+    font-family: kanit;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 0 0 30px 30px;
+    padding: 1vw 1vw;
+}
+.page2-right img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    object-position: 0 150%;
+    border-radius: 30px;   
+}
+.right-over{
+    width: 100%;
+    height: 25%;
+    background-color:white;
+    position: absolute;
+    bottom:14%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.overleft{
+    padding: 1.5vw 0;
+    font-size: 1vw;
+}
+.overright{
+    font-size: 1.1vw;
+    padding: 1.5vw 0;
+}
+
+/* ---------------------------------------------------------------END OF PAGE 2-----------------------------------------------------------*/
+
+/* 8) BEGINNING OF PAGE 3 */
+
+.page3{
+    height: 40vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    padding: 1vw 5vw;
+    gap: 10%;
+}
+.pg3-l{
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+.l1{
+    position: relative;
+}
+.l2{
+    align-content: center;
+}
+.pg3-r video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1{
+    height: 16vw;
+    position: absolute;
+    right: 50%;
+    bottom: 60%;
+    transform: translate(50% , 50%);
+    z-index: -1;
+    border-radius: 300px;
+}
+.img2{
+    position: absolute;
+    width:3.5vw ;
+    right: 50%;
+    bottom: 60%;
+    transform: translate(50% , 50%);
+}
+.l2 h2{
+    font-size: 1.7vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* 9) EXTENSION OF PAGE 3 */
+
+.page3-extension{
+    position: relative;
+    width: 100%;
+    height: 42vw;
+    padding: 3vw 5vw;
+}
+.page3-extension img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5vw;
+    object-fit: cover;
+}
+
+/* ---------------------------------------------------------------END OF PAGE 3-----------------------------------------------------------*/
+
+/* 10) Beginning of page 4 */
+
+.page4{
+    width: 100%;
+    height: 50vw;
+}
+.page4>h1{
+    text-align: center;
+    font-family: kanit;
+    font-size: 2.7vw;
+    font-weight: 800;
+}
+.elem{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    padding: 3vw 5vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.em1{
+    border-top: 3px solid black;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+.em2{
+    border-top: 3px solid black;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+.em3{
+    border-top: 3px solid black;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+.em4{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.em1-1{
+    font-size: 1.2vw;
+    font-weight: 100;
+    padding: 1vw 3vw;
+}
+.em1-2{
+    padding: 4px 0;
+}
+.em1-2 img{
+    object-fit: cover;
+    width: 40%;
+    height: 70%;
+    border-radius: 50%;
+    left:50%
+}
+.em1-3{
+    padding: 3vw 0;
+    letter-spacing: 1px;
+    line-height: 2.5vw;
+}
+.em1-3 h1{
+    font-size: 3vw;
+    font-weight: 100;
+}
+.em1-3 h5{
+    font-size: 0.8vw;
+}
+.em2-1{
+    font-size: 1.2vw;
+    font-weight: 100;
+    padding: 1vw 3vw;
+}
+.em2-2{
+    padding: 4px 0;
+}
+.em2-2 img{
+    object-fit: cover;
+    width: 40%;
+    height: 70%;
+    border-radius: 50%;
+}
+.em2-3{
+    padding: 3vw 0;
+    letter-spacing: 1px;
+    line-height: 2.5vw;
+}
+.em2-3 h1{
+    font-size: 3vw;
+    font-weight: 100;
+}
+.em2-3 h5{
+    font-size: 0.8vw;
+}
+.em3-1{
+    font-size: 1.2vw;
+    font-weight: 100;
+    padding: 1vw 3vw;
+}
+.em3-2{
+    padding: 3vw 0;
+    letter-spacing: 1px;
+    line-height: 2.5vw;
+}
+.em3-2 h1{
+    font-size: 3vw;
+    font-weight: 100;
+}
+.em3-2 h5{
+    font-size: 0.8vw;
+}
+.em3-3{
+    padding: 3vw 0;
+    letter-spacing: 1px;
+    line-height: 2.5vw;
+}
+.em3-3 h1{
+    font-size: 3vw;
+    font-weight: 100;
+}
+.em3-3 h5{
+    font-size: 0.8vw;
+}
+.em4-1{
+    font-size: 1.2vw;
+    font-weight: 100;
+    padding: 1vw 3vw;
+}
+.em4-2{
+    padding: 3vw 0;
+    letter-spacing: 1px;
+    line-height: 2.5vw;
+}
+.em4-2 h1{
+    font-size: 3vw;
+    font-weight: 100;
+}
+.em4-2 h5{
+    font-size: 0.8vw;
+}
+.em1:hover {
+    background-color: rgba(0, 0, 0, 0.250);
+}
+.em2:hover {
+    background-color: rgba(0, 0, 0, 0.250);
+}
+.em3:hover {
+    background-color: rgba(0, 0, 0, 0.250);
+}
+.em4:hover {
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+/* ---------------------------------------------------------------END OF PAGE 4-----------------------------------------------------------*/
+
+/* 11) Beginning of page 5 */
+
+.page5{
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 4vw 5vw;
+}
+.pg5-1{
+    margin-right: 30px;
+}
+.pg5-1 img{
+    width: 100%;
+    height: 45vw;
+    object-fit: cover;
+    border-radius: 5%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 50px 10px black;
+}
+.pg5-2{
+    width: 100%;
+    height:45vw ;
+    margin-left: 30px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.pg5-2-1{
+    padding: 1vw 0;
+}
+.pg5-2-1 h1{
+    font-family: kanit;
+    font-size: 5vw;
+}
+.pg5-2-1 h2{
+    font-size: 1.7vw;
+}
+.pg5-2-1 h4{
+    padding-top: 1.5vw;
+    font-size: 1.2vw;
+    width: 85%;
+}
+
+.pg5-2-2{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100%;
+    margin: 0 2% 0 0;
+}
+.pg5-2-2-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.pg5-2-2-2{
+    margin-left: 3vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pg5-2-2-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.pg5-2-2-2:hover img{
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 1px black;
+}
+.pg5-2-2-1:hover img{
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+/* 12) Extension of page 5 */
+
+.page5-extension{
+    position: relative;
+    width: 100%;
+    height: 38vw;
+    padding: 4vw 5vw;
+    margin: 6.5vw 0 2vw 0;
+}
+.page5-extension img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    object-fit: cover;
+    border-radius:20px ;
+}
+.fashion-week{
+    position: absolute;
+    width: 33%;
+    height: 30vw ;
+    left: 62%;
+    top: 10.5%;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(15px);
+    align-content: center;
+    justify-items: center;
+    line-height: 6vw;
+    text-align: center;
+    border-radius: 0 20px 20px 0px;
+}
+.fashion-week h2{
+    font-size: 7vw;
+    color: white;
+    font-family: kanit;
+}
+
+/* ---------------------------------------------------------------END OF PAGE 5-----------------------------------------------------------*/
+
+/* 13) BEGINNING OF PAGE 6 */
+
+.page6{
+    height: 39vw;
+    width: 100%;
+    padding: 0 4vw;
+    position: relative;
+    margin: 0 0 6vw 0;
+}
+.page6-cover{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:60% 40% ;
+    grid-template-rows: 100%;
+}
+.page6-left{
+    position: relative;
+    margin-right: 10vw;
+}
+.page6-right{
+    position: relative;
+}
+.page6-left img{
+    width: 100%;
+    height: 97.65%;
+    object-fit: cover;
+    object-position: 0 0%;
+    border-radius: 30px;
+}
+.page6-left:hover img{
+    border: 1px solid black;
+    box-shadow: 0px 0px 40px 1px black;
+}
+.page6-right:hover img{   
+    border: 1px solid black;
+    box-shadow: 0px 0px 40px 1px black;
+}
+.page6-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.right-over6{
+    width: 100%;
+    height: 30%;
+    background-color:white;
+    position: absolute;
+    bottom:0%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    border-radius: 0 0px 30px 30px;
+}
+.overleft6{
+    padding: 1vw 3vw;
+    font-size: 0.9vw;
+}
+.overright6{
+    font-size: 1.1vw;
+    padding: 1vw 2vw 0 0;
+}
+
+/* ---------------------------------------------------------------END OF PAGE 6-----------------------------------------------------------*/
+
+/* 15) Marque */
+
+.marque{
+    margin: 0vw 0 6vw 0;
+    height: 6vw;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-top: 0.15vw solid black;
+    border-bottom: 0.15vw solid black;
+    align-content: center;
+}
+.marque h1{
+    display:inline-block;
+    font-size: 3.5vw;
+    font-weight: 900;
+    font-style: kanit;
+    -webkit-text-stroke: 0.13vw black;
+    color: transparent;
+    margin-right: 16px;
+    letter-spacing: 1px;
+    animation-name:mark-t;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mark-t {
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(calc(-100% - 20px))
+    }
+}
+
+/* ---------------------------------------------------------------END OF Marque-----------------------------------------------------------*/
+
+/* 16) BEGINNING OF PAGE7  */
+
+.page7{
+    position: relative;
+    width: 100%;
+    height: 43vw;
+    padding: 1vw 4vw ;
+}
+.page7-cover{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 44% 12% 44%;
+    grid-template-rows: 100%;
+    box-shadow: 5px 5px 30px 0.1px black;
+    border-radius: 20px;
+}
+.pg7-1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+}
+.pg7-2{
+    position: relative;
+    line-height: 8vw;
+    align-content: center;
+    justify-items: center;
+    background-color: rgba(0,0,0,0.74);
+}
+.pg7-2 h1{
+    font-size: 9vw;
+    font-weight: 900;
+    -webkit-text-stroke: 0.6vw white;
+    color: transparent;
+    mix-blend-mode: difference;
+}
+.color{
+    -webkit-text-fill-color: red;
+}
+.pg7-2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    z-index: -1;
+}
+.pg7-3{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+}
+.pg7-1-1{
+    align-content: center;
+    line-height: 2.5vw;
+    justify-items: center;
+}
+.pg7-3-1{
+    align-content: center;
+    justify-items: center;
+    line-height: 2.5vw;
+}
+.pg7-3-2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 12%;
+    padding: 0 0 0 1vw;
+    border-radius: 0 0 20px 0;
+}
+.pg7-1-2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 12%;
+    padding: 0 1vw 0 0;
+    border-radius: 0 0 0 20px;
+}
+.pg7-1-1 h3{
+    font-size: 1.9vw;
+    width: 90%;
+}
+.B{
+    padding: 0.4vw 0.6vw;
+    font-size: 1vw;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right:10px ;
+}
+.pg7-3-1 h3{
+    font-size: 1.9vw;
+    width: 90%;
+}
+
+/* ---------------------------------------------------------------END OF PAGE7--------------------------------------------------------------*/
+
+/* 17) BEGINNING OF FOOTER */
+
+.footer{
+    width: 100%;
+    height: 16vw;
+    display: grid;
+    margin:7vw 0 ;
+    margin-bottom: 2vw;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.foot1{
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.foot1 h1{
+    padding: 0.5vw 0;
+    font-family: kanit ;
+    font-weight: 700;
+    font-size: 3.3vw;
+    letter-spacing: -3px;
+}
+.foot1 h3{
+    padding: 2vw 0;
+    font-size: 1.3vw;
+}
+.foot2{
+    border-right: 2px solid black;
+    justify-items: center;
+}
+.foot2 h3{
+    padding: 2vw 0;
+    font-size: 1.3vw;
+}
+.foot3{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 65%;
+}
+.foot3-1{
+    border-bottom: 2px solid black;
+    align-content: center;
+    justify-items: center;
+    font-size: 1.1vw;
+}
+.foot3-2{
+    display: grid;
+    padding: 1vw 4vw;
+    grid-template-rows: 40% 60%;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ic{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+.contact-us{
+    align-content: center;
+    justify-items: center;
+    font-size: 1.02vw;
+}
+
+/* ---------------------------------------------------------------END OF FOOTER-------------------------------------------------------------*/
+
+.end-gap{
+    width: 100%;
+    height: 1%;
+}
+
+
+/* --------------------------------------------Making site Responsive--------------------------------------------------*/
+
+@media (max-width:600px) {
+    .main{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 0 0 1vw 0;
+        margin: 0;
+    }
+    .nav{
+        height: 10vw;
+        margin: 8vw 0 -3vw 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .nav a {
+        font-size: 2.7vw;
+        height: 100%;
+        width: 45%;
+        justify-content: center;
+    }
+    .nav h1{
+        justify-content: center;
+        height: 100%;
+        width: 20%;
+        font-size: 5vw;
+    }
+    .nav a:last-child{
+        width: 25%;
+        font-size: 2.5vw;
+    }
+    .center{
+        height: 100vw;
+        padding: 4vw ;
+        margin: 8vw 0 0vw 0;
+    }
+    .overlay{
+        height: 36vw;
+    }
+    .over1 h2{
+        font-size: 1.2vw;
+        width: 4.5vw;
+        height: 4.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 2px solid white;
+        border-bottom: 1vw solid white;
+        border-top: 1vw solid white;
+    }
+    .over2 h2{
+        font-size: 2vw;
+    }
+    .scroll{
+        height: 30vw;
+        width: 100%;
+        margin: 6vw 0 8vw 0;
+    }
+    .scroll img{
+        height: 28vw;
+        width: 27vw;
+        margin: 1vw 1vw;
+    }
+    .alpha{
+        height: 12vw;
+        flex-wrap: wrap;
+        gap: 3.4vw;
+        margin-bottom: 8vw;
+    }
+    .alpha h5{
+        font-size: 2vw;
+    }
+    .alpha h6{
+        font-size: 2vw;
+    }
+    .page2{
+        height:250vw;
+        width: 100%;
+    }
+    .page2-cover{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns:100% ;
+        grid-template-rows: 50% 50%;
+        gap: 2vw;
+    }
+    .page2-left{
+        width: 100%;
+        height: 100%;
+    }
+    .page2-right{
+        width: 100%;
+        height: 100%;
+    }
+    .page2-left img{
+        width: 100%;
+        height: 97.65%;
+        object-fit: cover;
+        object-position: 40%;
+    }
+    .left-over{
+        height: 15vw;
+        font-size:5vw ;
+        padding: 1vw 0;
+        font-family: kanit;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 1vw 1vw;
+        justify-items: center;
+        align-content: center;
+    }
+    .page2-right img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:  0 200%;
+    }
+    .right-over{
+        width: 100%;
+        height: 35vw;
+        background-color:white;
+        position: absolute;
+        bottom:0%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+    .overleft{
+        line-height: 5vw;
+        padding: 1.5vw 5vw;
+        font-size: 3.4vw;
+    }
+    .overright{
+        font-size: 3.5vw;
+        padding: 1.5vw 0;
+    }
+    .page3{
+        height: 140vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        padding: 1vw 5vw;
+        gap: 10%;
+        margin: 5vw 0 10vw 0;
+    }
+    .pg3-l{
+        display: grid;
+        grid-template-rows: 40% 60%;
+        grid-row: 2;
+    }
+    .l1{
+        position: relative;
+    }
+    .l2{
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .pg3-r video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-row: 1;
+    }
+    .img1{
+        height: 30vw;
+        position: absolute;
+        right: 50%;
+        bottom: 60%;
+        transform: translate(50% , 50%);
+        z-index: -1;
+        border-radius: 300px;
+    }
+    .img2{
+        position: absolute;
+        height: 5vw;
+        width:3.5vw ;
+        right: 50%;
+        bottom: 60%;
+        transform: translate(50% , 50%);
+    }
+    .l2 h2{
+        font-size: 4vw;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .page3-extension{
+        height: 80vw;
+        padding: 0 0 0 0;
+        margin: 5vw 0 8vw 0;
+    }
+    .page3-extension img{
+        object-position: 2%;
+    }
+    .page4{
+        width: 100%;
+        height: 120vw;
+        padding: 0 0 0 0;
+        margin: 5vw 0 1vw 0;
+    }
+    .page4>h1{
+        text-align: center;
+        font-family: kanit;
+        font-size: 7vw;
+        font-weight: 800;
+        margin-bottom: 5vw;
+    }
+    .elem{
+        width: 100%;
+        height: 100vw;
+        display: grid;
+        padding: 3vw 0 0 0;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    .em1{
+        border-top: 3px solid black;
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+    }
+    .em2{
+        border-top: 3px solid black;
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+    }
+    .em3{
+        border-top: 3px solid black;
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+    }
+    .em4{
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    .em1-1{
+        align-content: center;
+        font-size: 3vw;
+    }
+    .em1-2{
+        padding: 4px 0;
+        position: relative;
+    }
+    .em1-2 img{
+        position: absolute;
+        object-fit: cover;
+        object-position: 0 10%;
+        width: 50%;
+        height: 90%;
+        border-radius: 50%;
+        left:22.5%
+    }
+    .em1-3{
+        padding: 3vw 0;
+        letter-spacing: 1px;
+        line-height: 5vw;
+    }
+    .em1-3 h1{
+        font-size: 5vw;
+        font-weight: 100;
+    }
+    .em1-3 h5{
+        font-size: 2vw;
+    }
+    .em2-1{
+        align-content: center;
+        font-size: 3vw;
+    }
+    .em2-2{
+        padding: 4px 0;
+        position: relative;
+    }
+    .em2-2 img{
+        position: absolute;
+        object-fit: cover;
+        object-position: 0 10%;
+        width: 50%;
+        height: 90%;
+        border-radius: 50%;
+        left:22.5%
+    }
+    .em2-3{
+        padding: 3vw 0;
+        letter-spacing: 1px;
+        line-height: 5vw;
+    }
+    .em2-3 h1{
+        font-size: 5vw;
+        font-weight: 100;
+    }
+    .em2-3 h5{
+        font-size: 2vw;
+    }
+    .em3-1{
+        align-content: center;
+        font-size: 3vw;
+        font-weight: 100;
+        padding: 1vw 3vw;
+    }
+    .em3-2{
+        padding: 3vw 0;
+        letter-spacing: 1px;
+        line-height: 2.5vw;
+        justify-items: center;
+        align-content: center;
+    }
+    .em3-2 h1{
+        font-size: 5vw;
+        font-weight: 100;
+        margin: 2vw;
+    }
+    .em3-2 h5{
+        font-size: 3vw;
+    }
+    .em3-3{
+        padding: 3vw 0;
+        letter-spacing: 1px;
+        line-height: 5vw;
+    }
+    .em3-3 h1{
+        font-size: 5vw;
+        font-weight: 100;
+    }
+    .em3-3 h5{
+        font-size: 2vw;
+    }
+    .em4-1{
+        align-content: center;
+        font-size: 3vw;
+        font-weight: 100;
+        padding: 1vw 3vw;
+    }
+    .em4-2{
+        padding: 3vw 0;
+        letter-spacing: 1px;
+        line-height: 5vw;
+    }
+    .em4-2 h1{
+        font-size: 5vw;
+        font-weight: 100;
+    }
+    .em4-2 h5{
+        font-size: 2vw;
+    }
+    .page5{
+        position: relative;
+        width: 100%;
+        height: 270vw;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        padding: 0 0 0 0;
+        gap: vw;
+        margin-bottom: 13vw;
+    }
+    .pg5-1{
+        margin-top:5vw ;
+        padding: 0 4vw;
+    }
+    .pg5-1 img{
+        width: 109%;
+        height: 98%;
+        object-fit: cover;
+        border-radius: 5%;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px 1px black;
+    }
+    .pg5-2{
+        width: 100%;
+        height:105% ;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        margin: 0vw;
+    }
+    .pg5-2-1{
+        justify-items: center;
+        text-align: center;
+    }
+    .pg5-2-1 h1{
+        font-family: kanit;
+        font-size: 15vw;
+    }
+    .pg5-2-1 h2{
+        font-size: 6vw;
+        line-height: 6vw;
+        margin: 2vw 0 2vw 0;
+    }
+    .pg5-2-1 h4{
+        padding-top: 1.5vw;
+        font-size: 3.4vw;
+        width: 85%;
+    }
+    
+    .pg5-2-2{
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        padding: 0 3vw 0 2vw;
+    }
+    .pg5-2-2-1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5%;
+    }
+    .pg5-2-2-2{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .pg5-2-2-2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5%;
+    }
+    .pg5-2-2-2:hover img{
+        border: 1px solid black;
+        box-shadow: 0px 0px 20px 1px black;
+    }
+    .pg5-2-2-1:hover img{
+        border: 1px solid black;
+        box-shadow: 0px 0px 20px 1px black;
+    }
+    .page5-extension{
+        position: relative;
+        width: 100%;
+        height: 120vw;
+        padding: 4vw 4vw;
+        margin: 6.5vw 0 5vw 0;
+    }
+    .page5-extension img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 0;
+        object-fit: cover;
+        border-radius:20px ;
+    }
+    .fashion-week{
+        position: absolute;
+        width: 42%;
+        height: 93%;
+        left: 55%;
+        top: 4%;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+        border-radius: 0 20px 20px 0px;
+    }
+    .fashion-week h2{
+        line-height: 15vw;
+        font-size: 11.5vw;
+        color: white;
+        font-family: kanit;
+    }
+    .page6{
+        height: 220vw;
+        width: 100%;
+        padding: 0 4vw;
+        position: relative;
+        margin: 0 0 13vw 0;
+    }
+    .page6-cover{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns:100% ;
+        grid-template-rows: 50% 50%;
+        gap:5vw;
+    }
+    .page6-left{
+        position: relative;
+        width: 100%;
+        height: 90%;
+    }
+    .page6-right{
+        position: relative;
+        height: 110%;
+        margin-top: -10vw;
+    }
+    .page6-left img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0%;
+        border-radius: 30px;
+    }
+    .page6-right img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .right-over6{
+        width: 100%;
+        height: 30%;
+        background-color:white;
+        position: absolute;
+        bottom:0%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        border-radius: 0 0px 30px 30px;
+    }
+    .overleft6{
+        padding: 1vw 3vw;
+        font-size: 3.1vw;
+    }
+    .overright6{
+        font-size: 3.5vw;
+        padding: 1vw 2vw 0 0;
+    }
+    .marque{
+        margin: 17vw 0 8vw 0;
+        height: 10vw;
+    }
+    .marque h1{
+        font-size: 6vw;
+        -webkit-text-stroke: 1px black;
+    }
+    .page7{
+        position: relative;
+        width: 100%;
+        height: 200vw;
+        padding: 1vw 4vw ;
+        margin-bottom: 10vw;
+    }
+    .page7-cover{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 10% 45%;
+        box-shadow: none;
+        border-radius: none;
+    }
+    .pg7-1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        margin-bottom: 5vw;
+    }
+    .pg7-2{
+        display: flex;
+        position: relative;
+        line-height: 8vw;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+        background-color: rgba(0,0,0,0.74);
+    }
+    .pg7-2 h1{
+        font-size: 15vw;
+        font-weight: 900;
+        -webkit-text-stroke: 0.6vw white;
+        color: transparent;
+        mix-blend-mode: difference;
+    }
+    color{
+        -webkit-text-fill-color: red;
+    }
+    .pg7-2 img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        z-index: -1;
+    }
+    .pg7-3{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        height: 100%;
+        margin-top: 3vw;
+    }
+    .pg7-1-1{
+        align-content: center;
+        justify-items: center;
+    }
+    .pg7-3-1{
+        align-content: center;
+        justify-items: center;
+        line-height: 2.5vw;
+    }
+    .pg7-3-2 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0% 12%;
+        padding: 0 0 0 1vw;
+        border-radius: 0%;
+    }
+    .pg7-1-2 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0% 12%;
+        padding: 0 1vw 0 0;
+        border-radius: 0%;
+    }
+    .pg7-1-1 h3{
+        text-align: start;
+        font-size: 5.5vw;
+        width: 100%;
+        height: 100%;
+        line-height: 8vw;
+    }
+    .pg7-3-1 h3{
+        text-align: start;
+        font-size: 5.5vw;
+        width: 100%;
+        line-height: 6vw;
+    }
+    .footer{
+        width: 100%;
+        height: 20vw;
+        display: grid;
+        margin:7vw 0 ;
+        margin-bottom: 2vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 70% ;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    .foot1{
+        position: relative;
+        border-right: none;
+        display: flex;
+        justify-content: space-around;
+        height: 3vw;
+        width: 100%;
+    }
+    .foot1 h1{
+        position: absolute;
+        left: 10%;
+        padding: 1vw 0vw;
+        font-family: kanit ;
+        font-weight: 700;
+        font-size: 8vw;
+        letter-spacing: -3px;
+    }
+    .foot1 h3{
+        position: absolute;
+        padding: 2vw 0;
+        font-size: 3vw;
+        top: 150%;
+    }
+    .foot2{
+        position: relative;
+        border-right: none;
+        justify-items: center;
+    }
+    .foot2 h3{
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        padding: 2vw 0;
+        font-size: 3vw;
+    }
+    .foot3{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        height: 30vw;
+    }
+    .foot3-1{
+        border-bottom: 2px solid black;
+        font-size: 3vw;
+        justify-items: center;
+        align-content: center;
+    }
+    .foot3-2{
+        display: grid;
+        padding: 2vw 4vw;
+        grid-template-rows: 40% 60%;
+        height: 15vw;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+    .ic{
+        width: 7vw;
+        height: 7vw;
+    }
+    .contact-us{
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+        font-size: 2.5vw;
+        height: 20vw;
+    }
+    .end-gap{
+        height: 5vw
+    }
+}
